@@ -19,9 +19,7 @@ const extractRootDomain = function (url) {
 
 function showPopup(id, fullTitle) {
   if (!document.getElementById(id)) {
-    const icon = createElement('div', { id: 'toast-img' }, 'Copy');
-    const title = createElement('div', { id: 'toast-desc' }, fullTitle);
-    document.body.appendChild(createElement('div', { id: id }, [icon, title]));
+    document.body.appendChild(createElement('div', { id: id }, fullTitle));
   }
   const element = document.getElementById(id);
   element.className = 'show';
@@ -60,7 +58,7 @@ function createElement(element, attribute, inner) {
   const title = document.title;
   const url = window.location.toString();
   const fullTitle = `${title} (${extractRootDomain(url)})`;
-  const id = 'toast';
+  const id = 'popup-notification';
   copy({
     html: `<a href="${url}">${fullTitle}</a>`,
     plain: `"${title}" ${url}`,
