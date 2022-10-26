@@ -1,1 +1,0 @@
-chrome.action.onClicked.addListener((function(e){chrome.scripting.executeScript({target:{tabId:e.id},files:["before.js"]})}));

@@ -1,1 +1,0 @@
-!function(){"use strict";document.getElementById("go-to-options").addEventListener("click",(function(){chrome.runtime.openOptionsPage()}))}();

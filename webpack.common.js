@@ -10,8 +10,8 @@ module.exports = {
     serviceWorker: './src/serviceWorker.js',
     before: './src/before.js',
     after: './src/after.js',
-    popup: './src/popup.js',
-    options: './src/options.js',
+    // popup: './src/popup.js',
+    // options: './src/options.js',
   },
   module: {
     rules: [
